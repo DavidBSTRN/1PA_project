@@ -3,13 +3,206 @@ WorldInfo {
   coordinateSystem "NUE"
 }
 Viewpoint {
-  orientation -0.7 0.7 0.2 0.75
-  position 1.2 1.6 2.3
-
+  orientation -0.8773376048244769 0.47206589469934795 0.08621205381241151 0.3200966729206241
+  position 1.405985055639842 1.0808359458427856 2.831664232191867
 }
 TexturedBackground {
 }
-TexturedBackgroundLight {
+Floor {
+  translation -0.7 0 0
+  size 3.5 0.43
 }
-RectangleArena {
+DEF ramp_2 Solid {
+  translation 0.76 0.24 0
+  children [
+    DEF ramp Shape {
+      appearance PBRAppearance {
+        baseColor 0 0.3 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.55 0.4 0.4
+      }
+    }
+  ]
+  name "solid(9)"
+  boundingObject USE ramp
+}
+DEF wall Solid {
+  translation -2.43 0.1 0
+  children [
+    DEF wall Shape {
+      appearance PBRAppearance {
+        baseColorMap ImageTexture {
+          url [
+            "textures/gray_brick_wall.jpg"
+          ]
+        }
+        metalness 0
+      }
+      geometry Box {
+        size 0.06 0.2 0.5
+      }
+    }
+  ]
+  name "solid(5)"
+  boundingObject USE wall
+  physics Physics {
+  }
+}
+DEF wall Solid {
+  translation 1.06 0.1 0
+  children [
+    DEF wall Shape {
+      appearance PBRAppearance {
+        baseColorMap ImageTexture {
+          url [
+            "textures/gray_brick_wall.jpg"
+          ]
+        }
+        metalness 0
+      }
+      geometry Box {
+        size 0.06 0.2 0.5
+      }
+    }
+  ]
+  name "solid(6)"
+  boundingObject USE wall
+  physics Physics {
+  }
+}
+DEF wall Solid {
+  translation -0.66 0.1 -0.23
+  rotation 0 1 0 -1.5707953071795862
+  children [
+    DEF wall Shape {
+      appearance PBRAppearance {
+        baseColorMap ImageTexture {
+          url [
+            "textures/gray_brick_wall.jpg"
+          ]
+        }
+        metalness 0
+      }
+      geometry Box {
+        size 0.05 0.2 3.5
+      }
+    }
+  ]
+  name "solid(7)"
+  boundingObject USE wall
+}
+DEF wall Solid {
+  translation -0.66 0.1 0.23
+  rotation 0 1 0 -1.5707953071795862
+  children [
+    DEF wall Shape {
+      appearance PBRAppearance {
+        baseColorMap ImageTexture {
+          url [
+            "textures/gray_brick_wall.jpg"
+          ]
+        }
+        metalness 0
+      }
+      geometry Box {
+        size 0.05 0.2 3.5
+      }
+    }
+  ]
+  name "solid(8)"
+  boundingObject USE wall
+}
+DEF ball Solid {
+  translation 0.9 0.48 0
+  children [
+    DEF ball Shape {
+      appearance PBRAppearance {
+      }
+      geometry Sphere {
+        radius 0.04
+        subdivision 2
+      }
+    }
+  ]
+  name "solid(4)"
+  boundingObject USE ball
+  physics Physics {
+  }
+}
+DEF track Solid {
+  translation -0.21 0.13 0
+  children [
+    DEF track Shape {
+      appearance PBRAppearance {
+        baseColorMap ImageTexture {
+          url [
+            "textures/desktop_wood.jpg"
+          ]
+        }
+        metalness 0
+      }
+      geometry Box {
+        size 2.5 0.02 0.4
+      }
+    }
+  ]
+  name "solid(3)"
+  boundingObject USE track
+}
+DEF ramp Group {
+  children [
+    Solid {
+      translation 0.24 0.15 0
+      children [
+        DEF ramp Shape {
+          appearance PBRAppearance {
+            baseColor 0 0.3 1
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.02 0.4
+          }
+        }
+      ]
+      boundingObject USE ramp
+    }
+    Solid {
+      translation 0.230651 0.293231 0
+      rotation 0 0 1 0.523595
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0 0.3 1
+            metalness 0
+          }
+          geometry Box {
+            size 0.55 0.02 0.4
+          }
+        }
+      ]
+      name "solid(1)"
+      boundingObject USE ramp
+    }
+    Solid {
+      translation 0.47526 0.295 0
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0 0.3 1
+            metalness 0
+          }
+          geometry Box {
+            size 0.29 0.02 0.4
+          }
+        }
+      ]
+      name "solid(2)"
+      boundingObject USE ramp
+    }
+  ]
+}
+TexturedBackgroundLight {
 }

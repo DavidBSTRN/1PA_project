@@ -3,14 +3,16 @@ WorldInfo {
   coordinateSystem "NUE"
 }
 Viewpoint {
-  orientation -0.8773376048244769 0.47206589469934795 0.08621205381241151 0.3200966729206241
-  position 1.405985055639842 1.0808359458427856 2.831664232191867
+  orientation -0.6012618508788601 0.7525333324392104 0.2686592083768289 1.0485197003092002
+  position 1.701178346559232 1.970555235658668 1.343941851122306
 }
 TexturedBackground {
 }
 Floor {
   translation -0.7 0 0
   size 3.5 0.43
+}
+Shape {
 }
 DEF ramp_2 Solid {
   translation 0.76 0.24 0
@@ -29,7 +31,8 @@ DEF ramp_2 Solid {
   boundingObject USE ramp
 }
 DEF wall Solid {
-  translation -2.43 0.1 0
+  translation -2.4388084011763618 0.09766668020477574 -1.3195133611507838e-06
+  rotation -0.0010511200345595033 7.072610445384634e-05 0.9999994450720916 0.011734543445933993
   children [
     DEF wall Shape {
       appearance PBRAppearance {
@@ -49,9 +52,12 @@ DEF wall Solid {
   boundingObject USE wall
   physics Physics {
   }
+  linearVelocity -0.00010445405726799902 -1.1608631507743649e-05 5.707502636702544e-08
+  angularVelocity 1.7797630737526642e-06 -3.899690229420779e-08 -0.0004114822262333286
 }
 DEF wall Solid {
-  translation 1.06 0.1 0
+  translation 1.0603818109500696 0.09993857373538685 -1.1424996840922569e-07
+  rotation 0.0003247939048787404 0.0018212427710859068 -0.9999982887903799 0.0017356065065839707
   children [
     DEF wall Shape {
       appearance PBRAppearance {
@@ -71,6 +77,8 @@ DEF wall Solid {
   boundingObject USE wall
   physics Physics {
   }
+  linearVelocity 0.00037196363801509356 -6.164447636562424e-05 -1.0403085748319123e-06
+  angularVelocity 1.904856127731397e-05 0.00015711897788677772 -0.0017069560726561636
 }
 DEF wall Solid {
   translation -0.66 0.1 -0.23
@@ -115,7 +123,7 @@ DEF wall Solid {
   boundingObject USE wall
 }
 DEF ball Solid {
-  translation 0.9 0.48 0
+  translation 0.57 0.4795796286550174 0
   children [
     DEF ball Shape {
       appearance PBRAppearance {
@@ -130,6 +138,7 @@ DEF ball Solid {
   boundingObject USE ball
   physics Physics {
   }
+  linearVelocity 0 -3.219871829455642e-06 0
 }
 DEF track Solid {
   translation -0.21 0.13 0

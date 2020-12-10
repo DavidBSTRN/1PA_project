@@ -1,0 +1,374 @@
+#VRML_SIM R2020b utf8
+WorldInfo {
+  coordinateSystem "NUE"
+}
+Viewpoint {
+  orientation -0.08541744182133588 0.9737323847538505 0.21106658549916937 2.3618117834321763
+  position 1.3870576670534842 1.4091733141744305 -2.014190051257165
+}
+TexturedBackground {
+}
+Floor {
+  translation -0.7 0 0
+  size 3.5 1
+}
+DEF Kolka_9 Can {
+  translation -2.18 0.07 -0.06
+  name "can1(9)"
+  mass 0.1
+}
+DEF Kolka_8 Can {
+  translation -2.18 0.07 0.05
+  name "can1(5)"
+  mass 0.1
+}
+DEF Kolka_6 Can {
+  translation -2.08 0.07 -0.12
+  name "can1(4)"
+  mass 0.1
+}
+DEF Kolka_5 Can {
+  translation -2.08 0.07 0
+  name "can1(3)"
+  mass 0.1
+}
+DEF Kolka_3 Can {
+  translation -1.99 0.07 -0.06
+  name "can1(2)"
+  mass 0.1
+}
+DEF Kolka_2 Can {
+  translation -1.99 0.07 0.06
+  name "can1(1)"
+  mass 0.1
+}
+DEF Kolka_1 Can {
+  translation -1.91 0.07 0
+  name "can1"
+  mass 0.1
+}
+DEF Kolka_10 Can {
+  translation -2.18 0.07 -0.17
+  name "can1(8)"
+  mass 0.1
+}
+DEF Kolka_7 Can {
+  translation -2.18 0.07 0.16
+  name "can1(7)"
+  mass 0.1
+}
+DEF Kolka_4 Can {
+  translation -2.08 0.07 0.11
+  name "can1(6)"
+  mass 0.1
+}
+DEF track Solid {
+  translation -0.21 0.13 0.28
+  children [
+    DEF track Shape {
+      appearance PBRAppearance {
+        baseColorMap ImageTexture {
+          url [
+            "textures/desktop_wood.jpg"
+          ]
+        }
+        metalness 0
+      }
+      geometry Box {
+        size 2.5 0.02 0.4
+      }
+    }
+  ]
+  name "solid(10)"
+  boundingObject USE track
+}
+DEF ramp_2 Solid {
+  translation 0.76 0.24 0.25
+  children [
+    DEF ramp Shape {
+      appearance PBRAppearance {
+        baseColor 0 0.3 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.55 0.4 0.4
+      }
+    }
+  ]
+  name "solid(12)"
+  boundingObject USE ramp
+}
+Shape {
+}
+DEF ramp_2 Solid {
+  translation 0.76 0.24 0
+  children [
+    DEF ramp Shape {
+      appearance PBRAppearance {
+        baseColor 0 0.3 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.55 0.4 0.4
+      }
+    }
+  ]
+  name "solid(9)"
+  boundingObject USE ramp
+}
+DEF wall_front Solid {
+  translation -2.436319678508362 0.1775583098832083 -0.002972794694596953
+  rotation -0.3171606320829378 0.010804360046870421 0.9483102863834859 0.0026106306259913647
+  scale 1.9 1.9 1.9
+  children [
+    DEF wall Shape {
+      appearance PBRAppearance {
+        baseColorMap ImageTexture {
+          url [
+            "textures/gray_brick_wall.jpg"
+          ]
+        }
+        metalness 0
+      }
+      geometry Box {
+        size 0.06 0.2 0.5
+      }
+    }
+  ]
+  name "solid(5)"
+  boundingObject USE wall
+  physics Physics {
+    mass 7
+  }
+}
+DEF wall Solid {
+  translation 1.1066528351105 0.17758687624509037 -0.003593781373591038
+  rotation 0.0990922058335547 0.8491293173359813 -0.5188064544544247 -0.005139858937263561
+  scale 1.8 1.8 1.8
+  children [
+    DEF wall Shape {
+      appearance PBRAppearance {
+        baseColorMap ImageTexture {
+          url [
+            "textures/gray_brick_wall.jpg"
+          ]
+        }
+        metalness 0
+      }
+      geometry Box {
+        size 0.06 0.2 0.5
+      }
+    }
+  ]
+  name "solid(6)"
+  boundingObject USE wall
+  physics Physics {
+  }
+}
+DEF wall Solid {
+  translation -0.66 0.1 -0.48
+  rotation 0 1 0 -1.5707953071795862
+  children [
+    DEF wall Shape {
+      appearance PBRAppearance {
+        baseColorMap ImageTexture {
+          url [
+            "textures/gray_brick_wall.jpg"
+          ]
+        }
+        metalness 0
+      }
+      geometry Box {
+        size 0.05 0.2 3.5
+      }
+    }
+  ]
+  name "solid(7)"
+  boundingObject USE wall
+}
+DEF wall Solid {
+  translation -0.66 0.1 0.47
+  rotation 0 1 0 -1.5707953071795862
+  children [
+    DEF wall Shape {
+      appearance PBRAppearance {
+        baseColorMap ImageTexture {
+          url [
+            "textures/gray_brick_wall.jpg"
+          ]
+        }
+        metalness 0
+      }
+      geometry Box {
+        size 0.05 0.2 3.5
+      }
+    }
+  ]
+  name "solid(8)"
+  boundingObject USE wall
+}
+DEF ball Solid {
+  translation 0.5533305660770064 0.47957921759325217 -0.012649712148743702
+  rotation 0.3007696662909124 0.6664563709908865 -0.6821829031901275 -2.050709204209926
+  scale 1.30404 1.30404 1.30404
+  children [
+    DEF ball Shape {
+      appearance PBRAppearance {
+      }
+      geometry Sphere {
+        radius 0.04
+        subdivision 2
+      }
+    }
+  ]
+  name "solid(4)"
+  boundingObject USE ball
+  physics Physics {
+    mass 3
+  }
+}
+DEF track Solid {
+  translation -0.21 0.13 -0.11
+  children [
+    DEF track Shape {
+      appearance PBRAppearance {
+        baseColorMap ImageTexture {
+          url [
+            "textures/desktop_wood.jpg"
+          ]
+        }
+        metalness 0
+      }
+      geometry Box {
+        size 2.5 0.02 0.4
+      }
+    }
+  ]
+  name "solid(3)"
+  boundingObject USE track
+}
+DEF track Solid {
+  translation -0.21 0.13 -0.29
+  children [
+    DEF track Shape {
+      appearance PBRAppearance {
+        baseColorMap ImageTexture {
+          url [
+            "textures/desktop_wood.jpg"
+          ]
+        }
+        metalness 0
+      }
+      geometry Box {
+        size 2.5 0.02 0.4
+      }
+    }
+  ]
+  name "solid(11)"
+  boundingObject USE track
+}
+DEF ramp_2 Solid {
+  translation 0.76 0.24 -0.26
+  children [
+    DEF ramp Shape {
+      appearance PBRAppearance {
+        baseColor 0 0.3 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.55 0.4 0.4
+      }
+    }
+  ]
+  name "solid(13)"
+  boundingObject USE ramp
+}
+DEF ramp Group {
+  children [
+    Solid {
+      translation 0.24 0.15 0
+      children [
+        DEF ramp Shape {
+          appearance PBRAppearance {
+            baseColor 0 0.3 1
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.02 0.4
+          }
+        }
+      ]
+      boundingObject USE ramp
+    }
+    Solid {
+      translation 0.230651 0.293231 0.25
+      rotation 0 0 1 0.523595
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0 0.3 1
+            metalness 0
+          }
+          geometry Box {
+            size 0.55 0.02 0.4
+          }
+        }
+      ]
+      name "solid(1)"
+      boundingObject USE ramp
+    }
+    Solid {
+      translation 0.47526 0.295 0
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0 0.3 1
+            metalness 0
+          }
+          geometry Box {
+            size 0.29 0.02 0.4
+          }
+        }
+      ]
+      name "solid(2)"
+      boundingObject USE ramp
+    }
+    Solid {
+      translation 0.230651 0.293231 -0.13
+      rotation 0 0 1 0.523595
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0 0.3 1
+            metalness 0
+          }
+          geometry Box {
+            size 0.55 0.02 0.4
+          }
+        }
+      ]
+      name "solid(14)"
+      boundingObject USE ramp
+    }
+    Solid {
+      translation 0.230651 0.293231 -0.26
+      rotation 0 0 1 0.523595
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0 0.3 1
+            metalness 0
+          }
+          geometry Box {
+            size 0.55 0.02 0.4
+          }
+        }
+      ]
+      name "solid(15)"
+      boundingObject USE ramp
+    }
+  ]
+}
+TexturedBackgroundLight {
+}

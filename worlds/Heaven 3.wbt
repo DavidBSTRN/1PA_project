@@ -3,8 +3,8 @@ WorldInfo {
   coordinateSystem "NUE"
 }
 Viewpoint {
-  orientation 0.09391864948918513 -0.9833972997729988 -0.15527085392082504 4.254508506980784
-  position 2.095194521648993 1.0878022689544513 -1.0389571371657735
+  orientation 0.011944601295599946 0.9940160991818605 0.10857864001343427 3.3034813925584725
+  position 0.1604537192530357 0.45723093105381984 -0.9762194619011786
 }
 TinkerbotsBase {
   translation 0.94 0.48 0
@@ -30,6 +30,9 @@ TinkerbotsBase {
     }
   }
   leftCSlot TinkerbotsFinger {
+  }
+  leftDSlot TinkerbotsFinger {
+    rotation 0 0 1 1.5707996938995747
   }
 }
 TexturedBackground {
@@ -234,7 +237,7 @@ DEF wall Solid {
   boundingObject USE wall
 }
 DEF ball Solid {
-  translation 0.805864 0.502808 -0.0389199
+  translation 0.785025 0.501336 0.0107153
   rotation 0.3007696662909124 0.6664563709908865 -0.6821829031901275 -2.050709204209926
   scale 1.30404 1.30404 1.30404
   children [

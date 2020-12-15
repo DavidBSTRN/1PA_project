@@ -3,8 +3,34 @@ WorldInfo {
   coordinateSystem "NUE"
 }
 Viewpoint {
-  orientation -0.08541744182133588 0.9737323847538505 0.21106658549916937 2.3618117834321763
-  position 1.3870576670534842 1.4091733141744305 -2.014190051257165
+  orientation 0.09391864948918513 -0.9833972997729988 -0.15527085392082504 4.254508506980784
+  position 2.095194521648993 1.0878022689544513 -1.0389571371657735
+}
+TinkerbotsBase {
+  translation 0.94 0.48 0
+  controller "Strkac"
+  upSlot TinkerbotsCube {
+    rightSlot TinkerbotsMotor {
+      rotation 0 0 1 -1.5707996938995747
+      name "motor_left"
+      frontSlot TinkerbotsAxle {
+        endSlot TinkerbotsWheel {
+        }
+      }
+    }
+  }
+  downSlot TinkerbotsCube {
+    leftSlot TinkerbotsMotor {
+      rotation 0 0 1 1.5707996938995747
+      name "motor_right"
+      frontSlot TinkerbotsAxle {
+        endSlot TinkerbotsWheel {
+        }
+      }
+    }
+  }
+  leftCSlot TinkerbotsFinger {
+  }
 }
 TexturedBackground {
 }
@@ -13,52 +39,52 @@ Floor {
   size 3.5 1
 }
 DEF Kolka_9 Can {
-  translation -2.18 0.07 -0.06
+  translation -1.37 0.2 -0.12
   name "can1(9)"
   mass 0.1
 }
 DEF Kolka_8 Can {
-  translation -2.18 0.07 0.05
+  translation -1.37 0.2 0.06
   name "can1(5)"
   mass 0.1
 }
+DEF Kolka_8 Can {
+  translation -1.37 0.2 -0.03
+  name "can1(8)"
+  mass 0.1
+}
 DEF Kolka_6 Can {
-  translation -2.08 0.07 -0.12
+  translation -1.29 0.2 -0.09
   name "can1(4)"
   mass 0.1
 }
 DEF Kolka_5 Can {
-  translation -2.08 0.07 0
+  translation -1.29 0.2 0.01
   name "can1(3)"
   mass 0.1
 }
 DEF Kolka_3 Can {
-  translation -1.99 0.07 -0.06
+  translation -1.21 0.2 -0.05
   name "can1(2)"
   mass 0.1
 }
 DEF Kolka_2 Can {
-  translation -1.99 0.07 0.06
+  translation -1.21 0.2 0.06
   name "can1(1)"
   mass 0.1
 }
 DEF Kolka_1 Can {
-  translation -1.91 0.07 0
+  translation -1.13 0.19 0
   name "can1"
   mass 0.1
 }
-DEF Kolka_10 Can {
-  translation -2.18 0.07 -0.17
-  name "can1(8)"
-  mass 0.1
-}
 DEF Kolka_7 Can {
-  translation -2.18 0.07 0.16
+  translation -1.37 0.2 0.16
   name "can1(7)"
   mass 0.1
 }
 DEF Kolka_4 Can {
-  translation -2.08 0.07 0.11
+  translation -1.28 0.2 0.11
   name "can1(6)"
   mass 0.1
 }
@@ -208,7 +234,7 @@ DEF wall Solid {
   boundingObject USE wall
 }
 DEF ball Solid {
-  translation 0.5533305660770064 0.47957921759325217 -0.012649712148743702
+  translation 0.805864 0.502808 -0.0389199
   rotation 0.3007696662909124 0.6664563709908865 -0.6821829031901275 -2.050709204209926
   scale 1.30404 1.30404 1.30404
   children [
@@ -301,7 +327,7 @@ DEF ramp Group {
       boundingObject USE ramp
     }
     Solid {
-      translation 0.230651 0.293231 0.25
+      translation 0.235651 0.284571 0.25
       rotation 0 0 1 0.523595
       children [
         Shape {
@@ -318,24 +344,7 @@ DEF ramp Group {
       boundingObject USE ramp
     }
     Solid {
-      translation 0.47526 0.295 0
-      rotation 0 0 1 -1.5707953071795862
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 0.3 1
-            metalness 0
-          }
-          geometry Box {
-            size 0.29 0.02 0.4
-          }
-        }
-      ]
-      name "solid(2)"
-      boundingObject USE ramp
-    }
-    Solid {
-      translation 0.230651 0.293231 -0.13
+      translation 0.235651 0.284571 -0.13
       rotation 0 0 1 0.523595
       children [
         Shape {
@@ -352,7 +361,7 @@ DEF ramp Group {
       boundingObject USE ramp
     }
     Solid {
-      translation 0.230651 0.293231 -0.26
+      translation 0.235651 0.284571 -0.26
       rotation 0 0 1 0.523595
       children [
         Shape {

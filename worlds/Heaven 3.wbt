@@ -3,16 +3,19 @@ WorldInfo {
   coordinateSystem "NUE"
 }
 Viewpoint {
-  orientation 0.011944601295599946 0.9940160991818605 0.10857864001343427 3.3034813925584725
-  position 0.1604537192530357 0.45723093105381984 -0.9762194619011786
+  orientation -0.11150350172188135 0.968575700961343 0.22232426905536337 2.209605818883097
+  position 1.6840600241494545 1.0300880454281878 -0.928125915849044
 }
 TinkerbotsBase {
-  translation 0.94 0.48 0
+  translation 0.97 0.47 0
+  name "robot"
   controller "Strkac"
   upSlot TinkerbotsCube {
     rightSlot TinkerbotsMotor {
       rotation 0 0 1 -1.5707996938995747
       name "motor_left"
+      rightSlot TinkerbotsCube {
+      }
       frontSlot TinkerbotsAxle {
         endSlot TinkerbotsWheel {
         }
@@ -23,6 +26,12 @@ TinkerbotsBase {
     leftSlot TinkerbotsMotor {
       rotation 0 0 1 1.5707996938995747
       name "motor_right"
+      leftSlot TinkerbotsCube {
+        backSlot TinkerbotsDistanceSensor {
+          rotation 0 0 1 1.5708003061004252
+          name "ds"
+        }
+      }
       frontSlot TinkerbotsAxle {
         endSlot TinkerbotsWheel {
         }
@@ -237,7 +246,7 @@ DEF wall Solid {
   boundingObject USE wall
 }
 DEF ball Solid {
-  translation 0.785025 0.501336 0.0107153
+  translation 0.549861 0.495665 0.00248848
   rotation 0.3007696662909124 0.6664563709908865 -0.6821829031901275 -2.050709204209926
   scale 1.30404 1.30404 1.30404
   children [

@@ -3,8 +3,8 @@ WorldInfo {
   coordinateSystem "NUE"
 }
 Viewpoint {
-  orientation -0.027185831478606315 0.9935319460631984 0.11025063591059574 2.605436379278453
-  position 1.3238249941607003 1.027354515299345 -1.9649621021711472
+  orientation -0.07584495546498699 0.9833890699265939 0.1649044568209811 2.2548216144005773
+  position 1.306698304151816 1.4794405837564362 -1.4444644736966294
 }
 DEF pro_player TinkerbotsBase {
   translation 0.97 0.47 0
@@ -49,7 +49,8 @@ TexturedBackground {
 TexturedBackgroundLight {
 }
 DEF cam TinkerbotsBase {
-  translation -1.28 0.73 0.03
+  translation -1.28 0.73 0.06
+  controller "sensor"
   leftSlot TinkerbotsCube {
   }
   rightSlot TinkerbotsCube {

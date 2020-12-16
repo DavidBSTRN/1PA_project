@@ -3,10 +3,10 @@ WorldInfo {
   coordinateSystem "NUE"
 }
 Viewpoint {
-  orientation -0.11150350172188135 0.968575700961343 0.22232426905536337 2.209605818883097
-  position 1.6840600241494545 1.0300880454281878 -0.928125915849044
+  orientation -0.09756458971930977 0.9875012207270862 0.12378404539930389 1.7686147727822568
+  position 2.5325504823776357 1.0258855134861178 -0.574838756444738
 }
-TinkerbotsBase {
+DEF pro_player TinkerbotsBase {
   translation 0.97 0.47 0
   name "robot"
   controller "Strkac"
@@ -45,6 +45,19 @@ TinkerbotsBase {
   }
 }
 TexturedBackground {
+}
+DEF cam TinkerbotsBase {
+  translation -1.28 0.73 0.03
+  leftSlot TinkerbotsCube {
+  }
+  rightSlot TinkerbotsCube {
+  }
+  extensionSlot [
+    Camera {
+      translation 0 -0.01 7.13734e-08
+      rotation 1 0 0 -1.5707953071795862
+    }
+  ]
 }
 Floor {
   translation -0.7 0 0
@@ -135,8 +148,6 @@ DEF ramp_2 Solid {
   ]
   name "solid(12)"
   boundingObject USE ramp
-}
-Shape {
 }
 DEF ramp_2 Solid {
   translation 0.76 0.24 0
@@ -245,8 +256,114 @@ DEF wall Solid {
   name "solid(8)"
   boundingObject USE wall
 }
+DEF beam Group {
+  children [
+    Solid {
+      translation -1.23 0.685 -0.00999992
+      rotation 1 0 0 1.5708
+      children [
+        DEF beam Shape {
+          appearance PBRAppearance {
+            baseColor 0 0.3 1
+            metalness 0
+          }
+          geometry Box {
+            size 0.045 0.95 0.05
+          }
+        }
+      ]
+      name "solid(17)"
+      boundingObject USE beam
+    }
+    Solid {
+      translation -1.23 0.44 -0.48
+      children [
+        DEF beam Shape {
+          appearance PBRAppearance {
+            baseColor 0 0.3 1
+            metalness 0
+          }
+          geometry Box {
+            size 0.045 0.5378 0.05
+          }
+        }
+      ]
+      name "solid(16)"
+      boundingObject USE beam
+    }
+    Solid {
+      translation -1.23 0.44 0.47
+      children [
+        DEF beam Shape {
+          appearance PBRAppearance {
+            baseColor 0 0.3 1
+            metalness 0
+          }
+          geometry Box {
+            size 0.045 0.538 0.05
+          }
+        }
+      ]
+      name "solid(2)"
+      boundingObject USE beam
+    }
+  ]
+}
+DEF beam Group {
+  children [
+    Solid {
+      translation -1.33 0.685 -0.00999992
+      rotation 1 0 0 1.5708
+      children [
+        DEF beam Shape {
+          appearance PBRAppearance {
+            baseColor 0 0.3 1
+            metalness 0
+          }
+          geometry Box {
+            size 0.045 0.95 0.05
+          }
+        }
+      ]
+      name "solid(3)"
+      boundingObject USE beam
+    }
+    Solid {
+      translation -1.33 0.44 -0.48
+      children [
+        DEF beam Shape {
+          appearance PBRAppearance {
+            baseColor 0 0.3 1
+            metalness 0
+          }
+          geometry Box {
+            size 0.045 0.5378 0.05
+          }
+        }
+      ]
+      name "solid(3)"
+      boundingObject USE beam
+    }
+    Solid {
+      translation -1.33 0.44 0.47
+      children [
+        DEF beam Shape {
+          appearance PBRAppearance {
+            baseColor 0 0.3 1
+            metalness 0
+          }
+          geometry Box {
+            size 0.045 0.5378 0.05
+          }
+        }
+      ]
+      name "solid(4)"
+      boundingObject USE beam
+    }
+  ]
+}
 DEF ball Solid {
-  translation 0.549861 0.495665 0.00248848
+  translation 0.54674 0.49754 -0.00682501
   rotation 0.3007696662909124 0.6664563709908865 -0.6821829031901275 -2.050709204209926
   scale 1.30404 1.30404 1.30404
   children [

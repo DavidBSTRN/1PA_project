@@ -3,8 +3,8 @@ WorldInfo {
   coordinateSystem "NUE"
 }
 Viewpoint {
-  orientation -0.07584495546498699 0.9833890699265939 0.1649044568209811 2.2548216144005773
-  position 1.306698304151816 1.4794405837564362 -1.4444644736966294
+  orientation 0.04772531397655737 -0.9848838838799703 -0.16651135000156692 3.7286212963535905
+  position 0.702514079236077 1.2304266586881032 -2.206295801735632
 }
 DEF pro_player TinkerbotsBase {
   translation 0.97 0.47 0
@@ -45,6 +45,436 @@ DEF pro_player TinkerbotsBase {
   }
 }
 TexturedBackground {
+}
+DEF skittle Solid {
+  translation -1.18 0.24 0.06
+  children [
+    DEF skittle Group {
+      children [
+        Solid {
+          translation 0 0.1 0
+          children [
+            DEF hat Shape {
+              appearance PBRAppearance {
+                baseColor 0 1 0
+                metalness 0
+              }
+              geometry Cylinder {
+                height 0.002
+                radius 0.02
+              }
+            }
+          ]
+          name "solid(1)"
+        }
+        Solid {
+          children [
+            DEF skittle Shape {
+              appearance PBRAppearance {
+                baseColor 1 0 0
+                metalness 0
+              }
+              geometry Cylinder {
+                height 0.2
+                radius 0.02
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+  name "solid(4)"
+  boundingObject USE skittle
+  physics Physics {
+  }
+}
+DEF skittle Solid {
+  translation -1.24 0.24 0.01
+  children [
+    DEF skittle Group {
+      children [
+        Solid {
+          translation 0 0.1 0
+          children [
+            DEF hat Shape {
+              appearance PBRAppearance {
+                baseColor 0 1 0
+                metalness 0
+              }
+              geometry Cylinder {
+                height 0.002
+                radius 0.02
+              }
+            }
+          ]
+          name "solid(1)"
+        }
+        Solid {
+          children [
+            DEF skittle Shape {
+              appearance PBRAppearance {
+                baseColor 1 0 0
+                metalness 0
+              }
+              geometry Cylinder {
+                height 0.2
+                radius 0.02
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+  name "solid(4)"
+  boundingObject USE skittle
+  physics Physics {
+  }
+}
+DEF skittle Solid {
+  translation -1.24 0.24 0.11
+  children [
+    DEF skittle Group {
+      children [
+        Solid {
+          translation 0 0.1 0
+          children [
+            DEF hat Shape {
+              appearance PBRAppearance {
+                baseColor 0 1 0
+                metalness 0
+              }
+              geometry Cylinder {
+                height 0.002
+                radius 0.02
+              }
+            }
+          ]
+          name "solid(1)"
+        }
+        Solid {
+          children [
+            DEF skittle Shape {
+              appearance PBRAppearance {
+                baseColor 1 0 0
+                metalness 0
+              }
+              geometry Cylinder {
+                height 0.2
+                radius 0.02
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+  name "solid(4)"
+  boundingObject USE skittle
+  physics Physics {
+  }
+}
+DEF skittle Solid {
+  translation -1.31 0.24 0.06
+  children [
+    DEF skittle Group {
+      children [
+        Solid {
+          translation 0 0.1 0
+          children [
+            DEF hat Shape {
+              appearance PBRAppearance {
+                baseColor 0 1 0
+                metalness 0
+              }
+              geometry Cylinder {
+                height 0.002
+                radius 0.02
+              }
+            }
+          ]
+          name "solid(1)"
+        }
+        Solid {
+          children [
+            DEF skittle Shape {
+              appearance PBRAppearance {
+                baseColor 1 0 0
+                metalness 0
+              }
+              geometry Cylinder {
+                height 0.2
+                radius 0.02
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+  name "solid(4)"
+  boundingObject USE skittle
+  physics Physics {
+  }
+}
+DEF skittle Solid {
+  translation -1.31 0.24 0.16
+  children [
+    DEF skittle Group {
+      children [
+        Solid {
+          translation 0 0.1 0
+          children [
+            DEF hat Shape {
+              appearance PBRAppearance {
+                baseColor 0 1 0
+                metalness 0
+              }
+              geometry Cylinder {
+                height 0.002
+                radius 0.02
+              }
+            }
+          ]
+          name "solid(1)"
+        }
+        Solid {
+          children [
+            DEF skittle Shape {
+              appearance PBRAppearance {
+                baseColor 1 0 0
+                metalness 0
+              }
+              geometry Cylinder {
+                height 0.2
+                radius 0.02
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+  name "solid(4)"
+  boundingObject USE skittle
+  physics Physics {
+  }
+}
+DEF skittle Solid {
+  translation -1.31 0.24 -0.04
+  children [
+    DEF skittle Group {
+      children [
+        Solid {
+          translation 0 0.1 0
+          children [
+            DEF hat Shape {
+              appearance PBRAppearance {
+                baseColor 0 1 0
+                metalness 0
+              }
+              geometry Cylinder {
+                height 0.002
+                radius 0.02
+              }
+            }
+          ]
+          name "solid(1)"
+        }
+        Solid {
+          children [
+            DEF skittle Shape {
+              appearance PBRAppearance {
+                baseColor 1 0 0
+                metalness 0
+              }
+              geometry Cylinder {
+                height 0.2
+                radius 0.02
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+  name "solid(4)"
+  boundingObject USE skittle
+  physics Physics {
+  }
+}
+DEF skittle Solid {
+  translation -1.38 0.24 0.01
+  children [
+    DEF skittle Group {
+      children [
+        Solid {
+          translation 0 0.1 0
+          children [
+            DEF hat Shape {
+              appearance PBRAppearance {
+                baseColor 0 1 0
+                metalness 0
+              }
+              geometry Cylinder {
+                height 0.002
+                radius 0.02
+              }
+            }
+          ]
+          name "solid(1)"
+        }
+        Solid {
+          children [
+            DEF skittle Shape {
+              appearance PBRAppearance {
+                baseColor 1 0 0
+                metalness 0
+              }
+              geometry Cylinder {
+                height 0.2
+                radius 0.02
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+  name "solid(4)"
+  boundingObject USE skittle
+  physics Physics {
+  }
+}
+DEF skittle Solid {
+  translation -1.38 0.24 0.11
+  children [
+    DEF skittle Group {
+      children [
+        Solid {
+          translation 0 0.1 0
+          children [
+            DEF hat Shape {
+              appearance PBRAppearance {
+                baseColor 0 1 0
+                metalness 0
+              }
+              geometry Cylinder {
+                height 0.002
+                radius 0.02
+              }
+            }
+          ]
+          name "solid(1)"
+        }
+        Solid {
+          children [
+            DEF skittle Shape {
+              appearance PBRAppearance {
+                baseColor 1 0 0
+                metalness 0
+              }
+              geometry Cylinder {
+                height 0.2
+                radius 0.02
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+  name "solid(4)"
+  boundingObject USE skittle
+  physics Physics {
+  }
+}
+DEF skittle Solid {
+  translation -1.38 0.24 -0.09
+  children [
+    DEF skittle Group {
+      children [
+        Solid {
+          translation 0 0.1 0
+          children [
+            DEF hat Shape {
+              appearance PBRAppearance {
+                baseColor 0 1 0
+                metalness 0
+              }
+              geometry Cylinder {
+                height 0.002
+                radius 0.02
+              }
+            }
+          ]
+          name "solid(1)"
+        }
+        Solid {
+          children [
+            DEF skittle Shape {
+              appearance PBRAppearance {
+                baseColor 1 0 0
+                metalness 0
+              }
+              geometry Cylinder {
+                height 0.2
+                radius 0.02
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+  name "solid(4)"
+  boundingObject USE skittle
+  physics Physics {
+  }
+}
+DEF skittle Solid {
+  translation -1.38 0.24 0.2
+  children [
+    DEF skittle Group {
+      children [
+        Solid {
+          translation 0 0.1 0
+          children [
+            DEF hat Shape {
+              appearance PBRAppearance {
+                baseColor 0 1 0
+                metalness 0
+              }
+              geometry Cylinder {
+                height 0.002
+                radius 0.02
+              }
+            }
+          ]
+          name "solid(1)"
+        }
+        Solid {
+          children [
+            DEF skittle Shape {
+              appearance PBRAppearance {
+                baseColor 1 0 0
+                metalness 0
+              }
+              geometry Cylinder {
+                height 0.2
+                radius 0.02
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+  name "solid(4)"
+  boundingObject USE skittle
+  physics Physics {
+  }
 }
 TexturedBackgroundLight {
 }
@@ -354,196 +784,6 @@ DEF track Solid {
   ]
   name "solid(3)"
   boundingObject USE track
-}
-DEF skittle Solid {
-  translation -1.18 0.21 0.05
-  children [
-    DEF skittle Shape {
-      appearance PBRAppearance {
-        baseColor 1 0 0
-        metalness 0
-      }
-      geometry Cylinder {
-        height 0.15
-        radius 0.02
-      }
-    }
-  ]
-  name "solid(4)"
-  boundingObject USE skittle
-  physics Physics {
-  }
-}
-DEF skittle Solid {
-  translation -1.31 0.21 -0.03
-  children [
-    DEF skittle Shape {
-      appearance PBRAppearance {
-        baseColor 1 0 0
-        metalness 0
-      }
-      geometry Cylinder {
-        height 0.15
-        radius 0.02
-      }
-    }
-  ]
-  name "solid(4)"
-  boundingObject USE skittle
-  physics Physics {
-  }
-}
-DEF skittle Solid {
-  translation -1.37 0.21 0.01
-  children [
-    DEF skittle Shape {
-      appearance PBRAppearance {
-        baseColor 1 0 0
-        metalness 0
-      }
-      geometry Cylinder {
-        height 0.15
-        radius 0.02
-      }
-    }
-  ]
-  name "solid(4)"
-  boundingObject USE skittle
-  physics Physics {
-  }
-}
-DEF skittle Solid {
-  translation -1.37 0.21 0.09
-  children [
-    DEF skittle Shape {
-      appearance PBRAppearance {
-        baseColor 1 0 0
-        metalness 0
-      }
-      geometry Cylinder {
-        height 0.15
-        radius 0.02
-      }
-    }
-  ]
-  name "solid(4)"
-  boundingObject USE skittle
-  physics Physics {
-  }
-}
-DEF skittle Solid {
-  translation -1.37 0.21 -0.07
-  children [
-    DEF skittle Shape {
-      appearance PBRAppearance {
-        baseColor 1 0 0
-        metalness 0
-      }
-      geometry Cylinder {
-        height 0.15
-        radius 0.02
-      }
-    }
-  ]
-  name "solid(4)"
-  boundingObject USE skittle
-  physics Physics {
-  }
-}
-DEF skittle Solid {
-  translation -1.37 0.21 0.16
-  children [
-    DEF skittle Shape {
-      appearance PBRAppearance {
-        baseColor 1 0 0
-        metalness 0
-      }
-      geometry Cylinder {
-        height 0.15
-        radius 0.02
-      }
-    }
-  ]
-  name "solid(4)"
-  boundingObject USE skittle
-  physics Physics {
-  }
-}
-DEF skittle Solid {
-  translation -1.25 0.21 0.09
-  children [
-    DEF skittle Shape {
-      appearance PBRAppearance {
-        baseColor 1 0 0
-        metalness 0
-      }
-      geometry Cylinder {
-        height 0.15
-        radius 0.02
-      }
-    }
-  ]
-  name "solid(4)"
-  boundingObject USE skittle
-  physics Physics {
-  }
-}
-DEF skittle Solid {
-  translation -1.25 0.21 0.01
-  children [
-    DEF skittle Shape {
-      appearance PBRAppearance {
-        baseColor 1 0 0
-        metalness 0
-      }
-      geometry Cylinder {
-        height 0.15
-        radius 0.02
-      }
-    }
-  ]
-  name "solid(4)"
-  boundingObject USE skittle
-  physics Physics {
-  }
-}
-DEF skittle Solid {
-  translation -1.31 0.21 0.05
-  children [
-    DEF skittle Shape {
-      appearance PBRAppearance {
-        baseColor 1 0 0
-        metalness 0
-      }
-      geometry Cylinder {
-        height 0.15
-        radius 0.02
-      }
-    }
-  ]
-  name "solid(4)"
-  boundingObject USE skittle
-  physics Physics {
-  }
-}
-DEF skittle Solid {
-  translation -1.31 0.21 0.13
-  children [
-    DEF skittle Shape {
-      appearance PBRAppearance {
-        baseColor 1 0 0
-        metalness 0
-      }
-      geometry Cylinder {
-        height 0.15
-        radius 0.02
-      }
-    }
-  ]
-  name "solid(4)"
-  boundingObject USE skittle
-  physics Physics {
-  }
 }
 DEF track Solid {
   translation -0.21 0.13 -0.29

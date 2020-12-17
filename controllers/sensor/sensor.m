@@ -27,7 +27,12 @@ while wb_robot_step(TIME_STEP) ~= -1
 image = wb_camera_get_image(camera);
 number = wb_camera_recognition_get_number_of_objects(camera);
 
-down = 10 - number
+if number == 10
+disp('come on')
+else 
+down = 10- number;
+disp(down)
+end
 
 
   % read the sensors, e.g.:

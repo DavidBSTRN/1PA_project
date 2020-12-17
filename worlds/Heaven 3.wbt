@@ -3,8 +3,8 @@ WorldInfo {
   coordinateSystem "NUE"
 }
 Viewpoint {
-  orientation 0.04828881024485824 -0.9946060903502117 -0.09179823442421134 4.17324142101184
-  position 2.764433503149857 1.1339913404344906 -2.1008600869702643
+  orientation 0.5650482984587175 -0.8035769651461405 -0.18704138979227636 5.535653109086965
+  position 0.8356702765270712 1.8107531493394216 2.1655847266874457
 }
 DEF pro_player TinkerbotsBase {
   translation 0.97 0.47 0
@@ -47,7 +47,7 @@ DEF pro_player TinkerbotsBase {
 TexturedBackground {
 }
 DEF skittle Solid {
-  translation -1.18 0.24 0.06
+  translation -1.17 0.24 0.06
   children [
     DEF skittle Group {
       children [
@@ -185,7 +185,7 @@ DEF skittle Solid {
   }
 }
 DEF skittle Solid {
-  translation -1.31 0.24 0.06
+  translation -1.31 0.24 0.05
   children [
     DEF skittle Group {
       children [
@@ -509,7 +509,7 @@ DEF skittle Solid {
 TexturedBackgroundLight {
 }
 DEF cam TinkerbotsBase {
-  translation -1.26 0.73 0.06
+  translation -1.25 0.73 0.06
   name "cam"
   controller "sensor"
   leftSlot TinkerbotsCube {
@@ -534,7 +534,7 @@ Floor {
   size 3.5 1
 }
 DEF track Solid {
-  translation -0.21 0.13 0.28
+  translation -0.24 0.13 0.28
   children [
     DEF track Shape {
       appearance PBRAppearance {
@@ -679,7 +679,7 @@ DEF wall Solid {
 DEF beam Group {
   children [
     Solid {
-      translation -1.21 0.685 -0.00999992
+      translation -1.2 0.685 -0.00999992
       rotation 1 0 0 1.5708
       children [
         DEF beam Shape {
@@ -696,7 +696,7 @@ DEF beam Group {
       boundingObject USE beam
     }
     Solid {
-      translation -1.21 0.44 -0.48
+      translation -1.2 0.44 -0.48
       children [
         DEF beam Shape {
           appearance PBRAppearance {
@@ -712,7 +712,7 @@ DEF beam Group {
       boundingObject USE beam
     }
     Solid {
-      translation -1.21 0.44 0.47
+      translation -1.2 0.44 0.47
       children [
         DEF beam Shape {
           appearance PBRAppearance {
@@ -732,7 +732,7 @@ DEF beam Group {
 DEF beam Group {
   children [
     Solid {
-      translation -1.31 0.685 -0.00999992
+      translation -1.3 0.685 -0.00999992
       rotation 1 0 0 1.5708
       children [
         DEF beam Shape {
@@ -749,7 +749,7 @@ DEF beam Group {
       boundingObject USE beam
     }
     Solid {
-      translation -1.31 0.44 -0.48
+      translation -1.3 0.44 -0.48
       children [
         DEF beam Shape {
           appearance PBRAppearance {
@@ -765,7 +765,7 @@ DEF beam Group {
       boundingObject USE beam
     }
     Solid {
-      translation -1.31 0.44 0.47
+      translation -1.3 0.44 0.47
       children [
         DEF beam Shape {
           appearance PBRAppearance {
@@ -783,7 +783,7 @@ DEF beam Group {
   ]
 }
 DEF ball Solid {
-  translation 0.54674 0.49754 -0.00682501
+  translation 0.549861 0.495665 0.00248848
   rotation 0.3007696662909124 0.6664563709908865 -0.6821829031901275 -2.050709204209926
   scale 1.30404 1.30404 1.30404
   children [
@@ -803,7 +803,7 @@ DEF ball Solid {
   }
 }
 DEF track Solid {
-  translation -0.21 0.13 -0.11
+  translation -0.24 0.13 -0.11
   children [
     DEF track Shape {
       appearance PBRAppearance {
@@ -823,7 +823,7 @@ DEF track Solid {
   boundingObject USE track
 }
 DEF track Solid {
-  translation -0.21 0.13 -0.29
+  translation -0.24 0.13 -0.29
   children [
     DEF track Shape {
       appearance PBRAppearance {

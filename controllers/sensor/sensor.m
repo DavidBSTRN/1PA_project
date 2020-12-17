@@ -13,8 +13,9 @@
 TIME_STEP = 64;
 
 % get and enable devices, e.g.:
-%  camera = wb_robot_get_device('camera');
-%  wb_camera_enable(camera, TIME_STEP);
+camera = wb_robot_get_device('camera');
+wb_camera_enable(camera, TIME_STEP);
+wb_camera_recognition_enable(camera, TIME_STEP);
 %  motor = wb_robot_get_device('motor');
 
 % main loop:
@@ -22,6 +23,12 @@ TIME_STEP = 64;
 % and leave the loop when Webots signals the termination
 %
 while wb_robot_step(TIME_STEP) ~= -1
+
+image = wb_camera_get_image(camera);
+number = wb_camera_recognition_get_number_of_objects(camera);
+
+down = 10 - number
+
 
   % read the sensors, e.g.:
   %  rgb = wb_camera_get_image(camera);

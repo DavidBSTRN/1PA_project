@@ -3,8 +3,8 @@ WorldInfo {
   coordinateSystem "NUE"
 }
 Viewpoint {
-  orientation 0.04772531397655737 -0.9848838838799703 -0.16651135000156692 3.7286212963535905
-  position 0.702514079236077 1.2304266586881032 -2.206295801735632
+  orientation 0.04828881024485824 -0.9946060903502117 -0.09179823442421134 4.17324142101184
+  position 2.764433503149857 1.1339913404344906 -2.1008600869702643
 }
 DEF pro_player TinkerbotsBase {
   translation 0.97 0.47 0
@@ -66,6 +66,9 @@ DEF skittle Solid {
             }
           ]
           name "solid(1)"
+          recognitionColors [
+            0 1 0
+          ]
         }
         Solid {
           children [
@@ -109,6 +112,9 @@ DEF skittle Solid {
             }
           ]
           name "solid(1)"
+          recognitionColors [
+            0 1 0
+          ]
         }
         Solid {
           children [
@@ -152,6 +158,9 @@ DEF skittle Solid {
             }
           ]
           name "solid(1)"
+          recognitionColors [
+            0 1 0
+          ]
         }
         Solid {
           children [
@@ -195,6 +204,9 @@ DEF skittle Solid {
             }
           ]
           name "solid(1)"
+          recognitionColors [
+            0 1 0
+          ]
         }
         Solid {
           children [
@@ -238,6 +250,9 @@ DEF skittle Solid {
             }
           ]
           name "solid(1)"
+          recognitionColors [
+            0 1 0
+          ]
         }
         Solid {
           children [
@@ -281,6 +296,9 @@ DEF skittle Solid {
             }
           ]
           name "solid(1)"
+          recognitionColors [
+            0 1 0
+          ]
         }
         Solid {
           children [
@@ -324,6 +342,9 @@ DEF skittle Solid {
             }
           ]
           name "solid(1)"
+          recognitionColors [
+            0 1 0
+          ]
         }
         Solid {
           children [
@@ -367,6 +388,9 @@ DEF skittle Solid {
             }
           ]
           name "solid(1)"
+          recognitionColors [
+            0 1 0
+          ]
         }
         Solid {
           children [
@@ -410,6 +434,9 @@ DEF skittle Solid {
             }
           ]
           name "solid(1)"
+          recognitionColors [
+            0 1 0
+          ]
         }
         Solid {
           children [
@@ -453,6 +480,9 @@ DEF skittle Solid {
             }
           ]
           name "solid(1)"
+          recognitionColors [
+            0 1 0
+          ]
         }
         Solid {
           children [
@@ -479,7 +509,8 @@ DEF skittle Solid {
 TexturedBackgroundLight {
 }
 DEF cam TinkerbotsBase {
-  translation -1.28 0.73 0.06
+  translation -1.26 0.73 0.06
+  name "cam"
   controller "sensor"
   leftSlot TinkerbotsCube {
   }
@@ -489,6 +520,12 @@ DEF cam TinkerbotsBase {
     Camera {
       translation 0 -0.01 7.13734e-08
       rotation 1 0 0 -1.5707953071795862
+      recognitionColors [
+        0 1 0
+      ]
+      recognition Recognition {
+        frameColor 0 1 0
+      }
     }
   ]
 }
@@ -642,7 +679,7 @@ DEF wall Solid {
 DEF beam Group {
   children [
     Solid {
-      translation -1.23 0.685 -0.00999992
+      translation -1.21 0.685 -0.00999992
       rotation 1 0 0 1.5708
       children [
         DEF beam Shape {
@@ -659,7 +696,7 @@ DEF beam Group {
       boundingObject USE beam
     }
     Solid {
-      translation -1.23 0.44 -0.48
+      translation -1.21 0.44 -0.48
       children [
         DEF beam Shape {
           appearance PBRAppearance {
@@ -675,7 +712,7 @@ DEF beam Group {
       boundingObject USE beam
     }
     Solid {
-      translation -1.23 0.44 0.47
+      translation -1.21 0.44 0.47
       children [
         DEF beam Shape {
           appearance PBRAppearance {
@@ -695,7 +732,7 @@ DEF beam Group {
 DEF beam Group {
   children [
     Solid {
-      translation -1.33 0.685 -0.00999992
+      translation -1.31 0.685 -0.00999992
       rotation 1 0 0 1.5708
       children [
         DEF beam Shape {
@@ -712,7 +749,7 @@ DEF beam Group {
       boundingObject USE beam
     }
     Solid {
-      translation -1.33 0.44 -0.48
+      translation -1.31 0.44 -0.48
       children [
         DEF beam Shape {
           appearance PBRAppearance {
@@ -728,7 +765,7 @@ DEF beam Group {
       boundingObject USE beam
     }
     Solid {
-      translation -1.33 0.44 0.47
+      translation -1.31 0.44 0.47
       children [
         DEF beam Shape {
           appearance PBRAppearance {

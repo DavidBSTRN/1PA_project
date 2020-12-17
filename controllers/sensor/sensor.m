@@ -14,8 +14,8 @@ TIME_STEP = 64;
 
 % get and enable devices, e.g.:
 camera = wb_robot_get_device('camera');
-wb_camera_enable(camera, TIME_STEP);
-wb_camera_recognition_enable(camera, TIME_STEP);
+wb_camera_enable(camera, 10*TIME_STEP);
+wb_camera_recognition_enable(camera, 10*TIME_STEP);
 %  motor = wb_robot_get_device('motor');
 
 % main loop:
